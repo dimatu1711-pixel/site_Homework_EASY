@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГДЗ 📚Easy home work📑 - Твій помічник у навчанні</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+        }
+
+        header {
+            background-color: var(--card-bg);
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-placeholder {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            color: white;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            border-left: 5px solid var(--primary-color);
+            padding-left: 10px;
+            margin-top: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .class-card {
+            background: var(--card-bg);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            cursor: pointer;
+            border: 1px solid #eee;
+        }
+
+        .class-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .subject-card {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--secondary-color);
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <div class="logo-placeholder">ГДЗ<br>Easy</div>
+        <h1 style="font-size: 24px;">ГДЗ 📚Easy home work📑</h1>
+    </div>
+    <nav>
+        <a href="#">Головна</a>
+        <a href="#">Класи</a>
+        <a href="#">Підручники</a>
+        <a href="#">Контакти</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Твій легкий шлях до успіху в школі!</h1>
+    <p>Швидкі та правильні відповіді до всіх підручників</p>
+    <input type="text" placeholder="Пошук підручника або завдання..." style="padding: 12px; width: 60%; border-radius: 25px; border: none; outline: none;">
+</section>
+
+<div class="container">
+    <h2>Обери свій клас:</h2>
+    <div class="grid">
+        <div class="class-card"><strong>1 Клас</strong></div>
+        <div class="class-card"><strong>2 Клас</strong></div>
+        <div class="class-card"><strong>3 Клас</strong></div>
+        <div class="class-card"><strong>4 Клас</strong></div>
+        <div class="class-card"><strong>5 Клас</strong></div>
+        <div class="class-card"><strong>6 Клас</strong></div>
+        <div class="class-card"><strong>7 Клас</strong></div>
+        <div class="class-card"><strong>8 Клас</strong></div>
+        <div class="class-card"><strong>9 Клас</strong></div>
+        <div class="class-card"><strong>10 Клас</strong></div>
+        <div class="class-card"><strong>11 Клас</strong></div>
+    </div>
+
+    <h2>Популярні предмети:</h2>
+    <div class="subjects-grid">
+        <div class="subject-card">📐 Математика</div>
+        <div class="subject-card">🇺🇦 Українська мова</div>
+        <div class="subject-card">🇬🇧 Англійська мова</div>
+        <div class="subject-card">🧬 Біологія</div>
+        <div class="subject-card">🌍 Географія</div>
+        <div class="subject-card">⚛️ Фізика</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 ГДЗ 📚Easy home work📑. Всі права захищені.</p>
+    <p>Зроблено для швидкого навчання 🚀</p>
+</footer>
+
+</body>
+</html>
