@@ -3,178 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ГДЗ 📚Easy home work📑 - Твій помічник у навчанні</title>
+    <title>Easy Home Work - Предмети</title>
     <style>
-        :root {
-            --primary-color: #3498db;
-            --secondary-color: #2c3e50;
-            --bg-color: #f4f7f6;
-            --card-bg: #ffffff;
-        }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fbfd;
             margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--secondary-color);
-        }
-
-        header {
-            background-color: var(--card-bg);
             padding: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
-        .logo-area {
+        /* Шапка з логотипом */
+        .header {
             display: flex;
             align-items: center;
-            gap: 15px;
+            margin-bottom: 40px;
+            padding: 10px 50px;
         }
 
-        .logo-placeholder {
+        .logo {
             width: 50px;
             height: 50px;
-            background-color: var(--primary-color);
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .logo-text {
             font-weight: bold;
-            font-size: 12px;
-            text-align: center;
+            font-size: 24px;
+            color: #2c3e50;
         }
 
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: var(--secondary-color);
-            font-weight: 600;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #3498db, #8e44ad);
-            color: white;
-        }
-
+        /* Секція предметів */
         .container {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 20px;
         }
 
-        h2 {
-            border-left: 5px solid var(--primary-color);
-            padding-left: 10px;
-            margin-top: 40px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .class-card {
-            background: var(--card-bg);
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
-            cursor: pointer;
-            border: 1px solid #eee;
-        }
-
-        .class-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary-color);
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
         }
 
         .subjects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
             gap: 20px;
         }
 
         .subject-card {
-            background: var(--card-bg);
-            padding: 15px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            background: white;
+            border: 1px solid #e0e6ed;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
         }
 
-        footer {
-            text-align: center;
-            padding: 40px;
-            background: var(--secondary-color);
-            color: white;
-            margin-top: 50px;
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-color: #3498db;
+        }
+
+        .subject-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .subject-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+
+        .subject-subtext {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-top: 5px;
+            display: block;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="logo-area">
-        <div class="logo-placeholder">ГДЗ<br>Easy</div>
-        <h1 style="font-size: 24px;">ГДЗ 📚Easy home work📑</h1>
+    <header class="header">
+        <img src="https://lh3.googleusercontent.com/gg-dl/AOI_d__GKcdu8dO5PntXHwJQEFsJidN5cxvH2NvU8HnztFPIToT7XKVw7LmJVxkZplGNINlICFuKleH1nX90XHrHA08JFs-c_Rz8vxdTxSKmy8Af9Jg-iWP-Qiug1U08sTNerJahWT42SpRrVsl2q6WPBN7fACtwO_CYWTSJr9k_VoeRj2J8-Q=s1024-rj" alt="Logo" class="logo" onerror="this.src='https://via.placeholder.com/50'">
+        <div class="logo-text">ГДЗ <span style="font-weight: normal; font-size: 16px; color: #3498db;">EASY HOME WORK</span></div>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Популярні Предмети</h2>
+        
+        <div class="subjects-grid">
+            <div class="subject-card">
+                <span class="subject-icon">📐</span>
+                <span class="subject-name">Алгебра</span>
+                <span class="subject-subtext">Алгебра ></span>
+            </div>
+
+            <div class="subject-card">
+                <span class="subject-icon">📐</span>
+                <span class="subject-name">Геометрія</span>
+                <span class="subject-subtext">Геометрія ></span>
+            </div>
+
+            <div class="subject-card">
+                <span class="subject-icon">📖</span>
+                <span class="subject-name">Укр. мова</span>
+                <span class="subject-subtext">Мова ></span>
+            </div>
+
+            <div class="subject-card">
+                <span class="subject-icon">🇬🇧</span>
+                <span class="subject-name">Англ. мова</span>
+                <span class="subject-subtext">English ></span>
+            </div>
+
+            <div class="subject-card">
+                <span class="subject-icon">🌍</span>
+                <span class="subject-name">Історія</span>
+                <span class="subject-subtext">Історія ></span>
+            </div>
+
+            <div class="subject-card">
+                <span class="subject-icon">⚛️</span>
+                <span class="subject-name">Фізика</span>
+                <span class="subject-subtext">Фізика ></span>
+            </div>
+        </div>
     </div>
-    <nav>
-        <a href="#">Головна</a>
-        <a href="#">Класи</a>
-        <a href="#">Підручники</a>
-        <a href="#">Контакти</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <h1>Твій легкий шлях до успіху в школі!</h1>
-    <p>Швидкі та правильні відповіді до всіх підручників</p>
-    <input type="text" placeholder="Пошук підручника або завдання..." style="padding: 12px; width: 60%; border-radius: 25px; border: none; outline: none;">
-</section>
-
-<div class="container">
-    <h2>Обери свій клас:</h2>
-    <div class="grid">
-        <div class="class-card"><strong>1 Клас</strong></div>
-        <div class="class-card"><strong>2 Клас</strong></div>
-        <div class="class-card"><strong>3 Клас</strong></div>
-        <div class="class-card"><strong>4 Клас</strong></div>
-        <div class="class-card"><strong>5 Клас</strong></div>
-        <div class="class-card"><strong>6 Клас</strong></div>
-        <div class="class-card"><strong>7 Клас</strong></div>
-        <div class="class-card"><strong>8 Клас</strong></div>
-        <div class="class-card"><strong>9 Клас</strong></div>
-        <div class="class-card"><strong>10 Клас</strong></div>
-        <div class="class-card"><strong>11 Клас</strong></div>
-    </div>
-
-    <h2>Популярні предмети:</h2>
-    <div class="subjects-grid">
-        <div class="subject-card">📐 Математика</div>
-        <div class="subject-card">🇺🇦 Українська мова</div>
-        <div class="subject-card">🇬🇧 Англійська мова</div>
-        <div class="subject-card">🧬 Біологія</div>
-        <div class="subject-card">🌍 Географія</div>
-        <div class="subject-card">⚛️ Фізика</div>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2026 ГДЗ 📚Easy home work📑. Всі права захищені.</p>
-    <p>Зроблено для швидкого навчання 🚀</p>
-</footer>
 
 </body>
 </html>
